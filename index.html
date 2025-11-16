@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Public School Fee Slip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Excel Public School Tissar Shigar</h1>
+            <h3>Fee Slip Generator</h3>
+        </header>
+
+        <section class="form-section">
+            <h2>Student Details</h2>
+            <div class="form-group">
+                <input type="text" id="studentName" placeholder="Student Name">
+                <input type="text" id="fatherName" placeholder="Father Name">
+                <input type="text" id="className" placeholder="Class & Section">
+                <input type="text" id="admissionNo" placeholder="Admission No.">
+                <input type="month" id="feeMonth">
+            </div>
+            <div class="form-group">
+                <input type="date" id="issueDate" placeholder="Issue Date">
+                <input type="date" id="dueDate" placeholder="Due Date">
+            </div>
+
+            <h3>Enter Fee Details (Rs)</h3>
+            <div class="form-group">
+                <input type="number" min="0" id="tuitionFee" placeholder="Tuition Fee">
+                <input type="number" min="0" id="schoolFee" placeholder="School Fee">
+                <input type="number" min="0" id="lateFee" placeholder="Late Fee">
+                <input type="number" min="0" id="previousFee" placeholder="Previous Fee">
+                <input type="number" min="0" id="fine" placeholder="Fine">
+                <input type="number" min="0" id="examFee" placeholder="Examination Fee">
+                <input type="number" min="0" id="admissionFee" placeholder="Admission/Readmission Fee">
+                <input type="number" min="0" id="securityFee" placeholder="Security Fee">
+                <input type="number" min="0" id="welfareFee" placeholder="Welfare Fee">
+                <input type="number" min="0" id="progressFee" placeholder="Progress Report Fee">
+                <input type="number" min="0" id="promotionFee" placeholder="Promotion Fee">
+                <input type="number" min="0" id="transportFee" placeholder="Transport Fee">
+                <input type="number" min="0" id="otherFee" placeholder="Other Fee">
+            </div>
+
+            <button onclick="generateFeeSlips()">Generate Fee Slips</button>
+            <button onclick="printFeeSlips()">Print Fee Slips</button>
+        </section>
+
+        <section id="slipsContainer" class="slips-container"></section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
